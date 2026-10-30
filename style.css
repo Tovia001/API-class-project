@@ -1,0 +1,346 @@
+
+/* Step 1: Set the basic page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: grey;
+    text-align: center;
+}
+
+/* Step 2: Style the top section */
+header {
+    padding: 80px 20px;
+}
+
+/* Step 3: Style the main heading */
+h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+/* Step 4: Style the paragraph */
+p {
+    color: darkgrey;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Step 5: Arrange the buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Step 6: Give the links a button appearance */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Step 7: Make the iOS button green */
+.btn-ios {
+    background-color:  mediumturquoise;
+}
+
+/* Step 8: Make the Mac button purple-blue */
+.btn-mac {
+    background-color: mediumpurple;
+}
+
+/* Make the page fit smaller screens */
+@media (max-width: 600px) {
+    header {
+        padding: 60px 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn {
+        display: block;
+        width: auto;
+    }
+}
+
+/* Style the Clipboard logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 5px solid darkturquoise;
+    border-radius: 50%;
+    color: darkturquoise;
+    font-size: 55px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px;
+}
+
+/* Style the snippets section */
+.snippets {
+    padding: 40px 20px;
+}
+
+ 
+/* Make the snippets section fit mobile screens */
+@media (max-width: 600px) {
+    .snippets-content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .computer-image {
+        width: 100%;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .feature {
+        margin-bottom: 25px;
+    }
+}
+
+/* Style the access section */
+.access-section {
+    text-align: center;
+    margin: 80px auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+/* Style the section heading */
+.access-section h2 {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+.access-section p {
+    color: darkgray;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+/* Style the devices image */
+.devices-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+
+/* Style the Supercharge section */
+.supercharge {
+    text-align: center;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* Style the main heading */
+.supercharge h2 {
+    color: grey;
+    margin-bottom: 15px;
+}
+
+/* Style the introduction */
+.supercharge > p {
+    color: darkgrey;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* Arrange the three features */
+.workflow-features {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Style each feature */
+.workflow-item {
+    flex: 1;
+}
+
+/* Style feature headings */
+.workflow-item h3 {
+    color: grey;
+    margin-bottom: 15px;
+}
+
+/* Style feature descriptions */
+.workflow-item p {
+    color: darkgrey;
+    line-height: 1.6;
+}
+
+/* Adjust for mobile screens */
+
+@media (max-width: 600px) {
+    .workflow-features {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .workflow-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Company logos section */
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.company-logos img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Phone layout */
+@media (max-width: 600px) {
+    .company-logos {
+        flex-direction: column;
+        gap: 35px;
+    }
+}
+
+
+/* Company logos section */
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+/* Style each logo */
+.company-logos img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Phone layout */
+@media (max-width: 600px) {
+    .company-logos {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+ 
+/* Final download section */
+.download-section {
+    text-align: center;
+    margin: 100px auto;
+    padding: 0 24px;
+    max-width: 700px;
+}
+
+.download-section h2 {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.download-section p {
+    color: darkgrey;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    background-color: #f5f6f8;
+    padding: 40px 24px;
+    margin-top: 80px;
+}
+
+/* Center the Clipboard logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+/* Arrange the footer links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px 40px;
+}
+
+/* Style footer and social links */
+.footer-links a,
+.social-links a {
+    color: grey;
+    text-decoration: none;
+}
+
+/* Change link color when touched or hovered */
+.footer-links a:hover,
+.social-links a:hover {
+    color: darkturquoise;
+}
+
+/* Arrange social media icons */
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+/* Phone layout */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
